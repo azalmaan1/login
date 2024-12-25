@@ -1,0 +1,123 @@
+/* Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* Resetting default margins and paddings, and setting box-sizing to border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Styling the body */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* Styling the container */
+.container {
+    background-color: #f9faf9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+
+/* Styling the h1 element */
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+/* Styling the form */
+.form {
+    padding: 30px 40px;
+}
+/* Styling form control */
+.form-control {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+/* Styling the label */
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+ 
+}
+/* Styling the input */
+.form-control input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Styling the check icon */
+.form-control i.fa-check-circle {
+    position: absolute;
+   text-align: right;
+   color: #31ca15;
+   top: 35px;
+   bottom: 0;
+    right: 10px;
+    visibility: hidden;
+}
+/* Styling the balaaska ama xmark */
+.form-control i.fa-xmark {
+    position: absolute;
+   text-align: right;
+   color: #ec5a36;
+   top: 35px;
+   bottom: 0;
+    right: 10px;
+    visibility: hidden;
+}
+/* Styling the input bordeka ku wareegsan */
+.form-control input:focus {
+    outline: none;
+    border-color: 1px solid #333;
+}
+/* Styling the eror massage */
+.form-control small {
+    display: block;
+    color: #ec5a36;
+    visibility: hidden;
+}
+/* Styling the botton */
+.btn {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+/* Styling botton hover */
+.btn:hover {
+    background-color: #f02222;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Styling the javascript success and eror icons */
+.form-control.success input {
+    border: 1px solid #31ca15;
+}
+
+
+.form-control.error input {
+    border: 1px solid #ec5a36;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
